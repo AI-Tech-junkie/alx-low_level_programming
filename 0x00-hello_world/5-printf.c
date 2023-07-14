@@ -3,7 +3,7 @@
 /**
  * main -Entry point
  * Description: with proper grammar, but the outcome is a piece of art
- * Return 0
+ * Return: Always 0 (Seccess)
 */
 
 int main(void)
