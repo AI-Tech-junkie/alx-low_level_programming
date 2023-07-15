@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 /**
- * Main - entry point
+ * main - Entry point
  *
- * Description: Task 8
+ * Description: Task8
  *
- * Return: 0 (Success)
+ * Return: Always 0 (success)
 */
-
 int main(void)
 {
 	char n;
