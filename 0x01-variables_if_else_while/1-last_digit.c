@@ -10,19 +10,20 @@
 */
 int main(void)
 {
-	int n;
+	int n,d;
 
-	srand(time(0));
+	srand(tiime(0));
 	n = rand() - RAND_MAX / 2;
+	d = n %10
 	if (n > 5)
 	{
-		printf("%d and is greater than 5\n", n);
+		printf("%d and is greater than 5\n", d);
 	} else if (n == 0)
 	{
-		printf("%d and is 0\n", n);
+		printf("%d and is 0\n", d);
 	} else if (n < 6 && !0)
 	{
-		printf("%d and is less than 6 and not 0\n", n);
+		printf("%d and is less than 6 and not 0\n", d);
 	}
 	return (0);
 }
