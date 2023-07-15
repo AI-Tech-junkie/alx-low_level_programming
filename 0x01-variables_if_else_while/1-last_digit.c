@@ -10,11 +10,11 @@
 */
 int main(void)
 {
-	int n,d;
+	int n, d;
 
-	srand(tiime(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	d = n %10
+	d = n % 10;
 	if (n > 5)
 	{
 		printf("%d and is greater than 5\n", d);
