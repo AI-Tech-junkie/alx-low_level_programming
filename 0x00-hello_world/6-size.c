@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *main - Entery point 
- * Description:task 6
- * Return: 0 Always (success)
+* main - Entery point
+* Description: task 6
+* Return: 0 Always (success)
 */
 int main(void)
 {
