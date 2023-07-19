@@ -2,7 +2,7 @@
 /**
  * _islower - check if a character is lowercase
  *
- *Description: this function will test if 'x' is lowercase or not
+ *@x: to check the input
  *
  *Return: returns 1 if 'x' lowercase Otherwise Always 0 (success)
  *
