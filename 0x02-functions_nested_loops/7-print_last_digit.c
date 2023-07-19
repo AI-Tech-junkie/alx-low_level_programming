@@ -10,8 +10,8 @@ int print_last_digit(int x)
 	{
 		if (x == -2147483648)
 		{
-			x = 8;
-			return (x);
+			x = -88;
+			
 		}
 		x = x * -1;
 	}
