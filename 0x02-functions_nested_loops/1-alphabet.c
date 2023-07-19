@@ -1,14 +1,13 @@
 #include "main.h"
-
-/**
- * main - Enetery point
- *
- * Description:task0
- *
- * Return: Always 0 (success)
-*/
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+        int i;
+        char j = '\n';
+
+        for (i = 'a';i <= 'z';i++)
+        {
+                _putchar(i);
+        }
+        _putchar(j);
+
 }
