@@ -2,7 +2,7 @@
 /**
  * _abs - function to calculate absolut value of a number
  *
- *@n:type of parameter
+ *@x:parameter and return value
  *
  * Return: Always x (success)
 */
