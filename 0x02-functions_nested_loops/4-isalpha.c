@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - check if a character is lowercase
+ * _isalpha - check if a character is lowercase
  *
  *@x:check input function
  *
@@ -9,7 +9,7 @@
 */
 int _isalpha(int x)
 {
-	if (x >= 65 && x <= 90)
+	if (x < 65 && x > 90)
 	{
 		return (1);
 	}
