@@ -7,7 +7,7 @@
  *Return: returns 1 if 'x' lowercase Otherwise Always 0 (success)
  *
 */
-int _islower(int x)
+int _isalpha(int x)
 {
 	if (x >= 65 && x <= 90)
 	{
