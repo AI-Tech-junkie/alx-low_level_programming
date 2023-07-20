@@ -14,9 +14,13 @@ void print_to_98(int x)
 		for (i = x; i <= 98; i++)
 		{
 			if ( i == 98)
-				printf("%i\n", i);
+			{
+				printf("%i", i);
+				print("\n");
+				break;
+			}
 			else 
-				printf("%i, ",i);
+				printf("%i, ", i);
 		}
 		printf("\n");
 	} else if (x >= 98)
@@ -25,9 +29,13 @@ void print_to_98(int x)
 		{
 			
 			if ( i == 98)
-				printf("%i\n", i);
+			{
+				printf("%i", i);
+				printf("\n");
+				break;
+			}
 			else
-				printf("%i, ",i);
+				printf("%i, ", i);
 		}
 		printf("\n");
 	}
