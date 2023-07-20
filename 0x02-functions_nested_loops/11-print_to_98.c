@@ -16,7 +16,7 @@ void print_to_98(int x)
 			if ( i == 98)
 			{
 				printf("%i", i);
-				print("\n");
+				printf("\n");
 				break;
 			}
 			else 
