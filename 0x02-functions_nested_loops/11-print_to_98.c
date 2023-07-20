@@ -1,3 +1,4 @@
+#include <stdio>
 #include "main.h"
 /**
  * print_to_98 - print from input to 98
@@ -12,5 +13,6 @@ void print_to_98(int x)
 	{
 		printf(" %i,", t);
 	}
+	return (0);
 
 }
