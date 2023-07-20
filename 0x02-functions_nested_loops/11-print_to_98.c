@@ -13,22 +13,21 @@ void print_to_98(int x)
 	{
 		for (i = x; i <= 98; i++)
 		{
-			if (i == x)
-			{
-				printf(" %i,", i);
-			} else
-				printf(" %i,", i);
+			if ( i == 98)
+				printf("%i\n", i);
+			else 
+				printf("%i, ",i);
 		}
 		printf("\n");
 	} else if (x >= 98)
 	{
 		for (i = x; i >= 98; i--)
 		{
-			if (i == x)
-			{
-				printf(" %i,", i);
-			} else
-				printf(" %i,", i);
+			
+			if ( i == 98)
+				printf("%i\n", i);
+			else
+				printf("%i, ",i);
 		}
 		printf("\n");
 	}
