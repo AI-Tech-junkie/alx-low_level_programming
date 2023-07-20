@@ -9,7 +9,7 @@ void print_to_98(int x)
 {
 	int i;
 
-	for (i = x; i <= 98; t++)
+	for (i = x; i <= 98; i++)
 	{
 		printf(" %i,", i);
 	}
