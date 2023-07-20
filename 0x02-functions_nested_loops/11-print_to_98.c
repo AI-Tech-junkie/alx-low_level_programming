@@ -23,7 +23,7 @@ void print_to_98(int x)
 				printf("%i, ", i);
 		}
 		printf("\n");
-	} else if (x >= 98)
+	} else
 	{
 		for (i = x; i >= 98; i--)
 		{
