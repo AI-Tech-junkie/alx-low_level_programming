@@ -15,19 +15,21 @@ void print_to_98(int x)
 		{
 			if (i == x)
 			{
-				printf("%i ", i);
+				printf(" %i,", i);
 			} else
 				printf(" %i,", i);
 		}
+		printf("\n");
 	} else if (x >= 98)
 	{
 		for (i = x; i >= 98; i--)
 		{
 			if (i == x)
 			{
-				printf("%i ", i);
+				printf(" %i,", i);
 			} else
 				printf(" %i,", i);
 		}
+		printf("\n");
 	}
 }
