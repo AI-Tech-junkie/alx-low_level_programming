@@ -8,22 +8,22 @@
 */
 void times_table(void)
 {
-        int i, j, r;
+	int i, j, r;
 
-        for (i = 0; i <= 9; i++)
-        {
-	       	_putchar('\n');
-	       	for (j = 0; j <= 9; j++)
+	for (i = 0; i <= 9; i++)
+	{
+		_putchar('\n');
+		for (j = 0; j <= 9; j++)
 		{
 			r = i * j;
 			if (r <= 9)
-			{ 
+			{
 				if (j != 0)
 				{
 					_putchar(' ');
 					_putchar(' ');
 				}
-				_putchar('0' + r );
+				_putchar('0' + r);
 			}
 			if (r >= 10)
 			{
@@ -37,7 +37,6 @@ void times_table(void)
 			if (j != 9)
 			{
 				_putchar(',');
-				
 			}
 		}
 	}
