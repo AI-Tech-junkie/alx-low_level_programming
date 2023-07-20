@@ -15,7 +15,7 @@ void print_to_98(int x)
 		{
 			if (i == x)
 			{
-				printf("%i,", i);
+				printf("%i ", i);
 			} else
 				printf(" %i,", i);
 		}
@@ -25,7 +25,7 @@ void print_to_98(int x)
 		{
 			if (i == x)
 			{
-				printf("%i,", i);
+				printf("%i ", i);
 			} else
 				printf(" %i,", i);
 		}
