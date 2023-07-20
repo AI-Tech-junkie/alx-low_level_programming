@@ -10,12 +10,8 @@ void times_table(void)
 {
 	int i, j, r;
 
-	for (i = 0; i <= 9; i++)
+	for ( i = 0; i <= 9; i++)
 	{
-		if(i > 0)
-		{
-			_putchar('\n');
-		}
 		for (j = 0; j <= 9; j++)
 		{
 			r = i * j;
@@ -42,5 +38,6 @@ void times_table(void)
 				_putchar(',');
 			}
 		}
+		_putchar('\n');
 	}
 }
