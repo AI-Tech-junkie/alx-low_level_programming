@@ -9,9 +9,9 @@ void print_to_98(int x)
 {
 	int i;
 
-	for (t = x; t <= 98; t++)
+	for (i = x; i <= 98; t++)
 	{
-		printf(" %i,", t);
+		printf(" %i,", i);
 	}
 	return (0);
 
