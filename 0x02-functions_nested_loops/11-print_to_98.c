@@ -11,7 +11,10 @@ void print_to_98(int x)
 
 	for (i = x; i <= 98; i++)
 	{
-		printf(" %i,", i);
+		if (i != x)
+			printf(" %i,", i);
+		else
+			printf("%i,", i);
 	}
 
 }
