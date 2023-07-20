@@ -13,6 +13,5 @@ void print_to_98(int x)
 	{
 		printf(" %i,", i);
 	}
-	return (0);
 
 }
