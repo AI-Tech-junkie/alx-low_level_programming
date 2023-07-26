@@ -14,11 +14,10 @@ void rev_string(char *s)
 	{
 		i++;
 	}
-	for (j = 0; j < i / 2; j++)
+	for (j = 0; j i < i / 2; j++)
 	{
 		t = *(s + j);
 		*(s + j) = *(s - j - 1 + i);
 		*(s - j - 1 + i) = t;
 	}
-	_putchar('\n');
 }
