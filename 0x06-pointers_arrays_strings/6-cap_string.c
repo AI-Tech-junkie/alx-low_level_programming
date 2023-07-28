@@ -13,7 +13,7 @@ char *cap_string(char *text)
 
 	while (text[j] != '\0')
 	{
-		for (i = 0; i <= 12; i++)
+		for (i = 0; i <= 13; i++)
 		{
 			if (text[j] == sep[i])
 			{
