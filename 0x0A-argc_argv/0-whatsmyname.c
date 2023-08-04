@@ -3,10 +3,11 @@
 /**
  * main - check the code
  *@argv: argment of value
- * Return: Always 0.
- */
+ *@argc: argment counter
+ * Return: Always 0
+*/
 int main(int argc, char *argv[])
 {
-	printf("%s \n", argv[argc - 1]);
+	printf("%s\n", argv[argc - 1]);
 	return (0);
 }
