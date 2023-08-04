@@ -2,12 +2,13 @@
 
 /**
  * main - check the code
- *@argv: argment of value
- *@argc: argment counter
+ * @argv: argment value
+ * @argc: argment counter
  * Return: Always 0
 */
 int main(int argc, char *argv[])
 {
+	(void)argv;
 	printf("%d\n", argc);
 	return (0);
 }
