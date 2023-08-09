@@ -10,6 +10,7 @@
 char *_strdup(char *str)
 {
 	int i = 0;
+	char *str_2;
 
 	if (str == NULL)
 	{
@@ -19,8 +20,7 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	char *str_2 = malloc(i);
-
+	str_2 = malloc(i);
 	while (i >= 0)
 	{
 		*(str_2 + i) = *(str + i);
