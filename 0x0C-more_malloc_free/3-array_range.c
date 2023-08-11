@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 	if (s3 == NULL)
 		return (NULL);
 	i = 0;
-	for (min; min <= max; min++)
+	for (min = min; min <= max; min++)
 	{
 		s3[i] = min;
 		i++;
