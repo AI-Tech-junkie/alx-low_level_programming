@@ -10,20 +10,18 @@
 int *array_range(int min, int max)
 {
 	int *s3;
-	int i;
+	int i, j;
 
 	if (min > max)
 		return (NULL);
-	for (i = min; i <= max; i++)
-	{}
-	s3 = malloc(sizeof(int) * i);
+	j = max - min + 1;
+	s3 = malloc(sizeof(int) * j);
 	if (s3 == NULL)
 		return (NULL);
-	i = 0;
-	for (min = min; min <= max; min++)
+	for (i = 0; i <= j; i++)
 	{
 		s3[i] = min;
-		i++;
+		min++;
 	}
 	return (s3);
 }
