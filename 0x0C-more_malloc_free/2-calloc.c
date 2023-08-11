@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * _calloc - function to allocate memory
  * @size: size of memory
@@ -10,7 +9,7 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *s3;
+	int *s3;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
