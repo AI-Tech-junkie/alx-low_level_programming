@@ -9,12 +9,17 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *s3;
+	char *s3;
+	int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	s3 = malloc(nmemb * size);
 	if (s3 == NULL)
 		return (NULL);
+	for (i = 0; i < (nmemb * size); i++)
+	{
+		*(s+i) = 0;
+	}
 	return (s3);
 }
