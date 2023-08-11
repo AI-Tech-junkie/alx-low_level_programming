@@ -5,7 +5,7 @@
 /**
  * _calloc - function to allocate memory
  * @size: size of memory
- * @s1: array size
+ * @nmemb: array size
  * Return: allways s3 or NULL
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
