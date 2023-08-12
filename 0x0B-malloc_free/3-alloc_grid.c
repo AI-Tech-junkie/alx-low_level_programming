@@ -22,7 +22,7 @@ int **alloc_grid(int width, int height)
 	}
 	for (i = 0; i < width; i++)
 	{
-		for (j = 0; j < width; j++)
+		for (j = 0; j < height; j++)
 		{
 			s3[i][j] = 0;
 		}
