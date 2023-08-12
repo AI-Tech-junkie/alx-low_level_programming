@@ -11,14 +11,21 @@
 int **alloc_grid(int width, int height)
 {
 	int **s3;
-	int i;
+	int i, j;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	s3 = calloc(width, sizeof(int *));
+	s3 = malloc(width * sizeof(int *));
 	for (i = 0; i < width; i++)
 	{
-		s3[i] = calloc(height, sizeof(int *));
+		s3[i] = malloc(height * sizeof(int *));
+	}
+	for (i = 0; i < width; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			s[i][j] = 0;
+		}
 	}
 	return (s3);
 }
