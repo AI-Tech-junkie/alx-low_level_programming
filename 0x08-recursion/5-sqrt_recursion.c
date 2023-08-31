@@ -6,7 +6,6 @@
  * @s: allways 1
  * Return: the len s or -1 if negative
 */
-
 int _sqrt(int n, int s)
 {
 	if (s * s == n)
@@ -16,7 +15,7 @@ int _sqrt(int n, int s)
 	_sqrt(n, s + 1);
 }
 /**
- * _sqrt_recursion - find _sqrt
+ * _sqrt_recursion - function for out puts
  * @n: number from frist function
  * Return: the i or -1 if negative
 */
