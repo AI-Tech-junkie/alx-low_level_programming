@@ -13,6 +13,7 @@ int _sqrt(int n, int s)
 	if (s > n / 2)
 		return (-1);
 	_sqrt(n, s + 1);
+	return;
 }
 /**
  * _sqrt_recursion - function for out puts
