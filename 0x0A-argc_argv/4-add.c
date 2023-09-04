@@ -13,9 +13,9 @@ int check_if_digital(char *c)
 	while (*c != '\0')
 	{
 		if (*(c + i) > '9' || *(c + i) < '0')
-			return (1); /* if it not */
+			return (0); /* if it not */
 		else
-			return (0);
+			return (1);
 		i++;
 	}
 	return (2);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		printf("0");
+		printf("0\n");
 		return (0);
 	}
 	for (t = 1; t < argc; t++)
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 		c = argv[t];
 		j = atoi(argv[t]);
 		i = check_if_digital(c);
-		if (i != 1 && j > 0)
+		if (i != 0 && j > 0)
 		{
 			sum = j + sum;
 		}
