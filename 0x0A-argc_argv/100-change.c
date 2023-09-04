@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * hand_made_function -  function to help
- * @i: amount of money
+ * @j: amount of money
  * Return: allway return the amount_of_cents
 */
 int hand_made_function(int j)
