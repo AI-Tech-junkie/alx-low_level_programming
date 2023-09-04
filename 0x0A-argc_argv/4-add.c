@@ -3,7 +3,7 @@
 #include <ctype.h>
 /**
  * check_if_digital - check the code if digital
- * @argc: string
+ * @c: string
  * Return: Always 0 or 1 if it notworking
  */
 int check_if_digital(char *c)
