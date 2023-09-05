@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 	int len_of_s1 = strlen(s1);
 	int len_of_s2 = strlen(s2);
 
-	conact_string = (char *)malloc(len_of_s2 + len_of_s1);
+	conact_string = (char *)malloc(len_of_s2 + len_of_s1 + 1);
 	if (conact_string == NULL)
 	{
 		free(conact_string);
@@ -31,5 +31,6 @@ char *str_concat(char *s1, char *s2)
 		*(conact_string + i) = *s2;
 		s2++;
 	}
+	conact_string[i] = '\0';
 	return (conact_string);
 }
