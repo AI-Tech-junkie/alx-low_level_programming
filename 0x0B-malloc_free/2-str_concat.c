@@ -13,9 +13,15 @@ char *str_concat(char *s1, char *s2)
 {
 	int i = 0;
 	char *conact_string;
-	int len_of_s1 = strlen(s1);
-	int len_of_s2 = strlen(s2);
+	int len_of_s1;
+	int len_of_s2;
 
+	if (s1 == NULL)
+		*s1 = "";
+	if (s2 == NULL)
+		*s2 = "";
+	len_of_s1 = strlen(s1);
+	len_of_s2 = strlen(s2);
 	conact_string = (char *)malloc(len_of_s2 + len_of_s1 + 1);
 	if (conact_string == NULL)
 	{
