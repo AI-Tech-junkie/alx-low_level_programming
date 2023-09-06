@@ -29,7 +29,7 @@ int **alloc_grid(int width, int height)
 	for (i = 0; i < width; i++)
 	{
 		tow_demo_array[i] = malloc(sizeof(int) * height);
-		if (tow_demo_array[i] == 0)
+		if (tow_demo_array[i] == NULL)
 		{
 			for (j = 0; j <= i; j++)
 				free(tow_demo_array[j]);
