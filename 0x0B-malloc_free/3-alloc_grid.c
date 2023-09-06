@@ -17,11 +17,13 @@ int **alloc_grid(int width, int height)
 
 	if (width == 0 || height == 0)
 	{
+		free(tow_demo_array);
 		return (NULL);
 	}
 	tow_demo_array = malloc(sizeof(int *) * width);
 	if (tow_demo_array == NULL)
 	{
+		free(tow_demo_array);
 		return (0);
 	}
 	for (i = 0; i < width; i++)
