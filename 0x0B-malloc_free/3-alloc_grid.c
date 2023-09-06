@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	tow_demo_array = malloc(sizeof(int *) * width);
+	tow_demo_array = malloc(sizeof(int *) * height);
 	if (tow_demo_array == NULL)
 	{
 		free(tow_demo_array);
