@@ -17,7 +17,6 @@ int **alloc_grid(int width, int height)
 
 	if (width == 0 || height == 0)
 	{
-		free(tow_demo_array);
 		return (NULL);
 	}
 	tow_demo_array = malloc(sizeof(int *) * width);
