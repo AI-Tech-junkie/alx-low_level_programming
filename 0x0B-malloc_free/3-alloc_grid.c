@@ -33,6 +33,7 @@ int **alloc_grid(int width, int height)
 		{
 			for (j = 0; j <= i; j++)
 				free(tow_demo_array[j]);
+			free(tow_demo_array);
 			return (NULL);
 		}
 	}
