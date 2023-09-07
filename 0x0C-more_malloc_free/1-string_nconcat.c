@@ -20,6 +20,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int len_s2;
 	int len_s1;
 
+	if (s1 == NULL)
+		s1 = "";
 	len_s1 = strlen(s1);
 	if (s2 == NULL)
 		s2 = "";
