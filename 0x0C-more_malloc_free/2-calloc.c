@@ -8,13 +8,13 @@
  * @size: size of each elment
  * Return: none
  */
-void _just_a_test(int *array, int size)
+void _just_a_test(int *array, char ziro, int size)
 {
 	int i = 0;
 
 	while (i < size)
 	{
-		array[i] = 0;
+		array[i] = ziro;
 		i++;
 	}
 }
@@ -38,6 +38,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	_just_a_test(ptr_return, nmemb);
+	_just_a_test(ptr_return, 0, nmemb);
 	return (ptr_return);
 }
