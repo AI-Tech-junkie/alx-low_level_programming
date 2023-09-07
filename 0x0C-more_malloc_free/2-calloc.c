@@ -6,23 +6,19 @@
  * _just_a_test - like calloc function
  * @array: size of array
  * @size: size of each elment
- * @ziro: char 0
+ * @c: charcter
  * Return: none
  */
-char *_just_a_test(char *array, char ziro, int size)
+void _just_a_test(char *array, char c, int size)
 {
 	int i = 0;
-	char *ptr;
 
-	ptr = array;
 	while (i < size)
 	{
-		ptr[i] = ziro;
+		array[i] = c;
 		i++;
 	}
-	return (ptr);
 }
-
 /**
  * _calloc - like calloc function
  * @nmemb: size of array
@@ -42,6 +38,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	_just_a_test(ptr_return, 0, nmemb);
+	_just_a_test(ptr_return, 0, nmemb * sizeof(size));
+
 	return (ptr_return);
 }
