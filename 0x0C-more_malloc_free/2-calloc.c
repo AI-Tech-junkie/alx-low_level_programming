@@ -6,17 +6,21 @@
  * _just_a_test - like calloc function
  * @array: size of array
  * @size: size of each elment
+ * @ziro: char 0
  * Return: none
  */
-void _just_a_test(int *array, char ziro, int size)
+char *_just_a_test(char *array, char ziro, int size)
 {
 	int i = 0;
+	char *ptr;
 
+	ptr = array;
 	while (i < size)
 	{
-		array[i] = ziro;
+		ptr[i] = ziro;
 		i++;
 	}
+	return (ptr);
 }
 
 /**
