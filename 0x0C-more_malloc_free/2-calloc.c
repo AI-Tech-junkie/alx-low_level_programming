@@ -13,6 +13,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr_return;
 
+	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
 	ptr_return = malloc(nmemb * sizeof(size));
 	if (ptr_return == NULL)
 	{
