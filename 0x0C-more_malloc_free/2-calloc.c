@@ -2,6 +2,22 @@
 #include <stdlib.h>
 #include <string.h>
 #include "main.h"
+/**
+ * _just_a_test - like calloc function
+ * @array: size of array
+ * @size: size of each elment
+ * Return: none
+ */
+void _just_a_test(int *array, int size)
+{
+	int i = 0;
+
+	while (i < size)
+	{
+		array[i] = 0;
+		i++;
+	}
+}
 
 /**
  * _calloc - like calloc function
@@ -11,9 +27,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr_return;
-	int i = 0;
-	int n = nmemb;
+	void *ptr_return;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -24,10 +38,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	while (i <  n)
-	{	
-		ptr_return[i] = 0;
-		i++;
-	}
+	_just_a_test(ptr_return, nmemb);
 	return (ptr_return);
 }
