@@ -23,5 +23,6 @@ int sum_them_all(const unsigned int n, ...)
 		temp_sum = va_arg(list, int);
 		sum = temp_sum + sum;
 	}
+	va_end(list);
 	return (sum);
 }
